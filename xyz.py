@@ -22,6 +22,7 @@ monument_info_dict = {
     "Charminar": "An iconic monument in Hyderabad, built in 1591, featuring four grand arches and a mosque on its top floor."
 }
 
+#This function is used to detect the monument
 def detect_monument(image):
     """Predict the monument name using the deep learning model."""
     image = cv2.resize(image, (224, 224))  # Resize to model input size
